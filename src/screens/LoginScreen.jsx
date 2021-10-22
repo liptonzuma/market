@@ -1,6 +1,7 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import { ActivityIndicator, Dimensions, StyleSheet, Text, TextInput, TouchableOpacity, View,Image } from 'react-native'
 import { useFonts } from 'expo-font';
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 export default function LoginScreen() {
@@ -9,6 +10,8 @@ export default function LoginScreen() {
         'Pattaya-Regular':require('../../assets/fonts/Pattaya-Regular.ttf'),
         'Montserrat':require('../../assets/fonts/Montserrat-Regular.ttf'),
     })
+
+    const [show,setShow] = useState(false)
 
     useEffect(()=>{
 
@@ -31,7 +34,13 @@ export default function LoginScreen() {
                     <TextInput
                      placeholder="Password"
                      style={styles.textfield}
+                     secureTextEntry={show}
                     />
+                   <TouchableOpacity 
+                    onPress={()=>setShow(!show)}
+                   >
+                        <MaterialIcons name={show?"visibility":"visibility-off"} size={24} color="#6e6f70" style={styles.icon} />
+                    </TouchableOpacity>
                 </View>
                 <View>
                 <TouchableOpacity>
@@ -74,6 +83,11 @@ export default function LoginScreen() {
 }
 
 const styles = StyleSheet.create({
+    icon:{
+        position:'absolute',
+        right:10,
+        bottom:15
+    },
     logo:{
         fontSize:60,
         fontFamily:'Pattaya-Regular',
@@ -96,7 +110,8 @@ const styles = StyleSheet.create({
         borderColor:'#ddd',
         fontSize:20,
         padding:10,
-        fontFamily:'Montserrat'
+        fontFamily:'Montserrat',
+        color:"#6e6f70"
     },
     fp:{
         textAlign:'right',
@@ -139,7 +154,8 @@ const styles = StyleSheet.create({
         paddingHorizontal:10,
         marginTop:Dimensions.get('screen').height/5,
         borderColor:'#144d9c',
-        borderWidth:2
+        borderWidth:2,
+        borderRadius:5
       
     },
     footer:{
