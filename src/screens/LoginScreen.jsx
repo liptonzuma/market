@@ -6,7 +6,8 @@ import { useFonts } from 'expo-font';
 export default function LoginScreen() {
 
     let [loaded ] =  useFonts({
-        'Pattaya-Regular':require('../../assets/fonts/Pattaya-Regular.ttf')
+        'Pattaya-Regular':require('../../assets/fonts/Pattaya-Regular.ttf'),
+        'Montserrat':require('../../assets/fonts/Montserrat-Regular.ttf'),
     })
 
     useEffect(()=>{
@@ -94,7 +95,8 @@ const styles = StyleSheet.create({
         borderBottomWidth:1.6,
         borderColor:'#ddd',
         fontSize:20,
-        padding:10
+        padding:10,
+        fontFamily:'Montserrat'
     },
     fp:{
         textAlign:'right',
