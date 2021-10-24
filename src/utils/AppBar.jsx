@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, SafeAreaView,View,Dimensions, TouchableOpacity } from 'react-native'
 import { Avatar } from 'react-native-elements/dist/avatar/Avatar'
-import { Feather } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 const AppBar = ({screen}) => {
     return (
@@ -9,7 +9,7 @@ const AppBar = ({screen}) => {
             <View style={styles.avatar}>
                 <TouchableOpacity>
                     <Text>
-                    <Feather name="grid" size={24} color="#f5565e" />
+                    <FontAwesome name="th-large" size={24} color="#f5565e" />
                     </Text>
                 </TouchableOpacity>
                 <Text>{screen}</Text>
