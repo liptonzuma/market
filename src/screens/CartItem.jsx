@@ -2,16 +2,16 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import AppBar from '../utils/AppBar'
 
-const Favorite = () => {
+const CartItem = () => {
     return (
         <View style={styles.container}>
-            <AppBar screen="Favorite"/>
-            <Text>Favorite</Text>
+            <AppBar screen="Cart" />
+            <Text>CartItem</Text>
         </View>
     )
 }
 
-export default Favorite
+export default CartItem
 
 const styles = StyleSheet.create({
     container:{

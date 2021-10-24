@@ -1,11 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View,SafeAreaView } from 'react-native'
+import AppBar from '../utils/AppBar'
 
 const HomeScreen = () => {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
+            <AppBar screen="Home"/>
             <Text>Home</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 

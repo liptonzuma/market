@@ -1,9 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import AppBar from '../utils/AppBar';
 
 const ProductList = () => {
     return (
         <View style={styles.container}>
+            <AppBar screen="Shop"/>
             <Text>ProductList</Text>
         </View>
     )
