@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
         borderColor:'transparent',
         elevation:1,
         borderRadius:10,
-        paddingHorizontal:20
+        paddingHorizontal:10,
+        marginLeft:-5
 
 
     },
@@ -51,14 +52,15 @@ const styles = StyleSheet.create({
         fontSize:14,
         borderWidth:2,
         borderColor:'transparent',
+        color:'#49494a'
     },
     filter:{
         backgroundColor:'#f5565e',
         height:48,
         padding:12,
         borderColor:'transparent',
-        borderRadius:5,
-        marginRight:5,   
+        borderRadius:10,
+        marginRight:3,   
 
     }
 })

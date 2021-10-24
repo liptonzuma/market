@@ -1,16 +1,21 @@
 import React from 'react'
-import { StyleSheet, Text, View,SafeAreaView } from 'react-native'
+import { StyleSheet, Text, View,SafeAreaView, ScrollView } from 'react-native'
 import AppBar from '../utils/AppBar'
+import Banner from '../utils/Banner'
 import Search from '../utils/Search'
 
 const HomeScreen = () => {
     return (
         <SafeAreaView style={styles.container}>
             <AppBar screen="Home"/>
+            <ScrollView>
             <View style={styles.searchbox}>
                 <Search/>
             </View>
-            <Text>Home</Text>
+            <View>
+                <Banner/>
+            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
