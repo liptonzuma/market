@@ -1,29 +1,16 @@
 import React, { useEffect } from 'react'
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
-import { useFonts } from 'expo-font';
-import LoginScreen from '../screens/LoginScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNav from '../screens/StackNav';
+import TabNav from '../screens/TabNav'
+
 
 const Main =() => {
-
-    let [loaded ] =  useFonts({
-        'Pattaya-Regular':require('../../assets/fonts/Pattaya-Regular.ttf')
-    })
-
-    useEffect(()=>{
-
-    },[loaded])
-
+    const loggedIn = false;
     return (
-        <View>
-               <LoginScreen/>
-        </View>
+       <NavigationContainer>
+          <StackNav /> 
+       </NavigationContainer>
     )
 }
 
 export default Main
-
-const styles = StyleSheet.create({
-    text:{
-        fontFamily:'Pattaya-Regular'
-    }
-})
