@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeScreen from './HomeScreen'
 import { AntDesign } from '@expo/vector-icons';
 import { Octicons } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 import Favorite from './Favorite';
 import ProductList from './ProductList';
 
@@ -44,7 +44,7 @@ const TabNav = () => {
             component={ProductList}
             options={{
                 headerShown:false,
-                tabBarIcon:({focused})=><Fontisto name="shopping-basket" size={24} color={focused?"#f5565e":"black"} />
+                tabBarIcon:({focused})=><Feather name="shopping-bag" size={24} color={focused?"#f5565e":'black'} />
             }}
            />
            <Tab.Screen
