@@ -2,9 +2,47 @@ import React from 'react'
 import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient'
 import { AntDesign } from '@expo/vector-icons';
+import Carousel from 'pinar'
 
 const Banner = () => {
     return (
+        <Carousel
+            height={Dimensions.get('screen').height/3.2}
+            showsControls={false}
+            autoplay={true}
+            autoplayInterval={1000}
+        >
+        <View style={styles.container}>
+           <LinearGradient
+            colors={['black','grey']}
+            style={styles.container}
+            start={{x:0.4,y:0.8}}
+            locations={[0.6,0.6]}
+           >
+               <View style={styles.inner}>
+               <View style={styles.discount}>
+                   <View>
+                    <Text style={styles.text1}>Get discount</Text>
+                    <Text style={styles.text2}>50%</Text>
+                    <Text style={styles.text2}>OFF</Text>
+                    </View>
+               </View>
+
+               <View style={{marginRight:15}}>
+                   <View style={styles.star}>
+                       <Text>
+                       <AntDesign name="star" size={14} color="white" />
+                       </Text>
+                    </View>
+                   <Image 
+                    resizeMode="contain"
+                    source={require('../../assets/images/sneaker1.png')}
+                    style={styles.image1}
+                   />
+               </View>
+            </View>
+           </LinearGradient>
+        </View>
         <View style={styles.container}>
            <LinearGradient
             colors={['black','#48c72e']}
@@ -20,10 +58,11 @@ const Banner = () => {
                     <Text style={styles.text2}>OFF</Text>
                     </View>
                </View>
+
                <View style={{marginRight:15}}>
                    <View style={styles.star}>
                        <Text>
-                       <AntDesign name="star" size={18} color="white" />
+                       <AntDesign name="star" size={14} color="white" />
                        </Text>
                     </View>
                    <Image 
@@ -35,6 +74,38 @@ const Banner = () => {
             </View>
            </LinearGradient>
         </View>
+        <View style={styles.container}>
+           <LinearGradient
+            colors={['black','#2c7bc9']}
+            style={styles.container}
+            start={{x:0.4,y:0.7}}
+            locations={[0.6,0.7]}
+           >
+               <View style={styles.inner}>
+               <View style={styles.discount}>
+                   <View>
+                    <Text style={styles.text1}>Get discount</Text>
+                    <Text style={styles.text2}>50%</Text>
+                    <Text style={styles.text2}>OFF</Text>
+                    </View>
+               </View>
+
+               <View style={{marginRight:15}}>
+                   <View style={styles.star}>
+                       <Text>
+                       <AntDesign name="star" size={14} color="white" />
+                       </Text>
+                    </View>
+                   <Image 
+                    resizeMode="contain"
+                    source={require('../../assets/images/sneaker2.png')}
+                    style={styles.image2}
+                   />
+               </View>
+            </View>
+           </LinearGradient>
+        </View>
+        </Carousel>
     )
 }
 
@@ -72,6 +143,17 @@ const styles = StyleSheet.create({
         width:160,
         height:160,
         marginTop:18,
+        marginRight:15
+    },
+    image1:{
+        width:160,
+        height:160,
+        
+        marginRight:15
+    },
+    image2:{
+        width:160,
+        height:160,
         marginRight:15
     },
     inner:{
