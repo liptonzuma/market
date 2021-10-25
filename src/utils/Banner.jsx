@@ -10,7 +10,9 @@ const Banner = () => {
             height={Dimensions.get('screen').height/3.2}
             showsControls={false}
             autoplay={true}
-            autoplayInterval={1000}
+            autoplayInterval={3000}
+            loop={true}
+
         >
         <View style={styles.container}>
            <LinearGradient
@@ -123,21 +125,20 @@ const styles = StyleSheet.create({
         backgroundColor:'#191c18',
         marginLeft:15,
         width:100,
-        padding:3,
         borderRadius:5,
         padding:7,
                 
     },
     text1:{
         color:'white',
-        paddingLeft:12,
-        fontSize:12
+        fontSize:12,
+        textAlign:'center'
     },
     text2:{
         color:'white',
         fontSize:30,
         fontWeight:'700',
-        paddingLeft:15
+        textAlign:'center'
     },
     image:{
         width:160,
