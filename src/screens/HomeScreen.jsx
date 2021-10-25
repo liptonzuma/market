@@ -2,7 +2,9 @@ import React from 'react'
 import { StyleSheet, Text, View,SafeAreaView, ScrollView } from 'react-native'
 import AppBar from '../utils/AppBar'
 import Banner from '../utils/Banner'
+import Category from '../utils/Category'
 import Search from '../utils/Search'
+import HomeItems from './HomeItems'
 
 const HomeScreen = () => {
     return (
@@ -14,6 +16,12 @@ const HomeScreen = () => {
             </View>
             <View>
                 <Banner/>
+            </View>
+            <View>
+                <Category/>
+            </View>
+            <View>
+                <HomeItems/>
             </View>
             </ScrollView>
         </SafeAreaView>
