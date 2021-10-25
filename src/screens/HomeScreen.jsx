@@ -8,7 +8,7 @@ import HomeItems from './HomeItems'
 
 const HomeScreen = () => {
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={styles.container} >
             <AppBar screen="Home"/>
             <ScrollView>
             <View style={styles.searchbox}>

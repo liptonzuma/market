@@ -23,27 +23,27 @@ const Category = () => {
                 <MaterialCommunityIcons name="shoe-formal" size={24} color={current==2? "#f5565e":"grey"}/>
                 <Text style={{
                     color:current==2? "#f5565e":"grey"
-                }} >Footwear </Text>
+                }} > Footwear </Text>
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity 
             onPress={()=>setCurrent(3)}
             style={styles.button}> 
                 <Text>
-                <MaterialIcons name="watch" size={24} color={current==3? "#f5565e":"grey"}/>
+                <MaterialIcons name="watch" size={20} color={current==3? "#f5565e":"grey"}/>
                 <Text style={{
                     color:current==3? "#f5565e":"grey"
-                }} >Wrist watch </Text>
+                }} > Wrist watch </Text>
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity 
             onPress={()=>setCurrent(4)}
             style={styles.button}>
                 <Text>
-                <Entypo name="suitcase" size={24} color={current==4? "#f5565e":"grey"}/>
+                <Entypo name="suitcase" size={20} color={current==4? "#f5565e":"grey"}/>
                 <Text style={{
                     color:current==4? "#f5565e":"grey"
-                }} >Bags </Text>
+                }} > Bags </Text>
                 </Text>
             </TouchableOpacity>
             

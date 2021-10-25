@@ -31,9 +31,9 @@ const TabNav = () => {
                 borderRadius:15,
                 elevation:1,
                 shadowColor:"#ddd",
-                shadowOffset:{width:3,height:3},
+                shadowOffset:{width:1,height:1},
                 shadowOpacity:1,
-                shadowRadius:3
+                shadowRadius:2
             }
         }}
        >
