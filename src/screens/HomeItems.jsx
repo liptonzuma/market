@@ -76,9 +76,28 @@ const HomeItems = () => {
                 </Text>
                 </View>
                 </View>
-                <View style={styles.item1}>
+            <View style={styles.n2}>
                 <Text style={styles.new}>New</Text>
+                <View >
+                <View style={styles.bagWrapper}>
+                    <Image 
+                        source={require("../../assets/images/n2.png")}
+                        resizeMode="contain"
+                        style={styles.n2Image}
+                    />
 
+                </View>
+                <View style={{
+                    paddingTop:15
+                }}>
+                <Text style={styles.label}>
+                    Backpack
+                </Text>
+                <Text style={styles.label}>
+                    $15.00
+                </Text>
+                </View>
+                </View>
                 </View>
                 <View style={styles.item}>
 
@@ -179,6 +198,11 @@ const styles = StyleSheet.create({
         width:150,
         height:150,
      },
+     n2Image:{
+        width:150,
+        height:150,
+        marginTop:-30
+     },
      bagWrapper:{
          justifyContent:'center',
          alignItems:'center'
@@ -188,6 +212,13 @@ const styles = StyleSheet.create({
          alignItems:'center',
          marginBottom:15
      },
+     n2:{
+        width:'95%',
+         backgroundColor:'#fff',
+         height:230,
+         borderRadius:10,
+         marginBottom:10
+     }
 
 
 
