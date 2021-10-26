@@ -16,6 +16,7 @@ const HomeItems = () => {
             <View style={styles.row}>
             <View style={styles.column1}>
                     <View style={styles.item}>
+                        <TouchableOpacity>
                         <Text style={styles.new}>New</Text>
                         <View style={styles.imageWrapper}>
                             <Image 
@@ -30,9 +31,11 @@ const HomeItems = () => {
                                 $12.00
                             </Text>
                         </View>
+                        </TouchableOpacity>
                     </View>
 
                     <View style={styles.watchWrapper}>
+                        <TouchableOpacity>
                         <View style={styles.watcWrapper}>
                             <View style={styles.watchContainer}>
                             <Image 
@@ -48,37 +51,62 @@ const HomeItems = () => {
                                 $120.00
                             </Text>
                         </View>
+                        </TouchableOpacity>
                     </View>
                     
                
-                <View style={styles.item1}>
+                    <View style={styles.bagcontainer1}>
+                    <TouchableOpacity>
+                    <View style={styles.bagWrapper}>
+                        <Image 
+                            source={require("../../assets/images/red.png")}
+                            resizeMode="contain"
+                            style={styles.bag1}
+                         />
 
+                    </View>
+                    <View style={{
+                        paddingTop:15
+                    }}>
+                        <Text style={styles.label}>
+                            Gucci Bag
+                        </Text>
+                        <Text style={styles.label}>
+                            $150.00
+                        </Text>
+                    </View>
+                    </TouchableOpacity>
                 </View>
             </View> 
             <View style={styles.column2}>
                 <View style={styles.bagcontainer}>
-                <View style={styles.bagWrapper}>
-                            <Image 
-                                source={require("../../assets/images/bagpack.png")}
-                                resizeMode="contain"
-                                style={styles.bag}
-                            />
+                    <TouchableOpacity>
+                    <View style={styles.bagWrapper}>
+                                <Image 
+                                    source={require("../../assets/images/bagpack.png")}
+                                    resizeMode="contain"
+                                    style={styles.bag}
+                                />
 
+                    </View>
+                    <View style={{
+                        paddingTop:15
+                    }}>
+                        <Text style={styles.label}>
+                            Backpack
+                        </Text>
+                        <Text style={styles.label}>
+                            $15.00
+                        </Text>
+                    </View>
+                    </TouchableOpacity>
                 </View>
-                <View style={{
-                    paddingTop:15
-                }}>
-                <Text style={styles.label}>
-                    Backpack
-                </Text>
-                <Text style={styles.label}>
-                    $15.00
-                </Text>
-                </View>
-                </View>
+            
             <View style={styles.n2}>
+
                 <Text style={styles.new}>New</Text>
-                <View >
+            <View >
+                <TouchableOpacity>
                 <View style={styles.bagWrapper}>
                     <Image 
                         source={require("../../assets/images/n2.png")}
@@ -87,21 +115,38 @@ const HomeItems = () => {
                     />
 
                 </View>
-                <View style={{
+                 <View style={{
                     paddingTop:15
                 }}>
-                <Text style={styles.label}>
-                    Backpack
-                </Text>
-                <Text style={styles.label}>
-                    $15.00
-                </Text>
+                    <Text style={styles.label}>
+                        Puma Shoes
+                    </Text>
+                    <Text style={styles.label}>
+                        $15.00
+                    </Text>
+            </View>
+            </TouchableOpacity>
+        </View>
                 </View>
-                </View>
-                </View>
-                <View style={styles.item}>
 
-                </View>
+                <View style={styles.item6}>
+                    <TouchableOpacity>
+                        <View style={styles.imageWrapper}>
+                            <Image 
+                                source={require("../../assets/images/swatch.png")}
+                                resizeMode="contain"
+                                style={styles.swatch}
+                            />
+                            <Text style={styles.label}>
+                                Smart Watch
+                            </Text>
+                            <Text style={styles.label}>
+                                $50.00
+                            </Text>
+                        </View>
+                        </TouchableOpacity>
+                    </View>
+
             </View>
             </View>
         </View>
@@ -147,18 +192,27 @@ const styles = StyleSheet.create({
         borderRadius:10,
         marginBottom:10
     },
-    item1:{
+    item6:{
         width:'95%',
-        backgroundColor:'green',
+        backgroundColor:'#645ae8',
+        justifyContent:'center',
+        alignItems:'center',
+        height:170,
+        borderRadius:10,
+        marginBottom:10,paddingBottom:10
+    },
+    bagcontainer:{
+        width:'95%',
+        backgroundColor:'#8ad9ed',
         height:230,
         borderRadius:10,
         marginBottom:10
 
 
     },
-    bagcontainer:{
+    bagcontainer1:{
         width:'95%',
-        backgroundColor:'#8ad9ed',
+        backgroundColor:'#f0a5ae',
         height:230,
         borderRadius:10,
         marginBottom:10
@@ -183,6 +237,11 @@ const styles = StyleSheet.create({
         height:150,
         marginTop:-50
     },
+    swatch:{
+        width:150,
+        height:150,
+        marginTop:-10,
+    },
     watch:{
         width:120,
         height:120,
@@ -197,6 +256,11 @@ const styles = StyleSheet.create({
      bag:{
         width:150,
         height:150,
+     },
+     bag1:{
+        width:150,
+        height:150,
+        marginTop:10
      },
      n2Image:{
         width:150,
