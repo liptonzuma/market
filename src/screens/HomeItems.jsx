@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     },
     row:{
         marginHorizontal:10,
-        height:Dimensions.get('screen').height,
+        height:Dimensions.get('screen').height + 100,
         width:Dimensions.get('screen').width-10,
         flexDirection:'row',
         justifyContent:'space-between'
