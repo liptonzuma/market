@@ -27,7 +27,6 @@ const StackNav = () => {
            />
             <Stack.Screen 
             name="Item"
-
             component={Item}
            />
 
