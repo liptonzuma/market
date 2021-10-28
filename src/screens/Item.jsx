@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dimensions, Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Dimensions, Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { FAB, Rating } from 'react-native-elements'
 import { Entypo } from '@expo/vector-icons';
 
@@ -34,8 +34,15 @@ const Item = ({route,navigation}) => {
                             {data.description}
                         </Text>
                     </View>
-                   
+                 
                 </ScrollView>
+                <View>
+                       <TouchableOpacity style={styles.fab}>
+                           <Text>
+                           <Entypo name="shopping-cart" size={24} color="white" />
+                           </Text>
+                       </TouchableOpacity>
+                   </View>
             </View>
         </View>
     )
@@ -102,6 +109,16 @@ const styles = StyleSheet.create({
     
     },
   
- 
+    fab:{
+        justifyContent:'center',
+        alignItems:'center',
+        width:70,
+        height:70,
+        borderRadius:35,
+        backgroundColor:'#f5565e',
+        position:'absolute',
+        right:10,
+        bottom:50
+    }
 
 })
