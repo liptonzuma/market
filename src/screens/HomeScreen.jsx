@@ -6,7 +6,7 @@ import Category from '../utils/Category'
 import Search from '../utils/Search'
 import HomeItems from './HomeItems'
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
     return (
         <SafeAreaView style={styles.container} >
             <AppBar screen="Home"/>
@@ -21,7 +21,7 @@ const HomeScreen = () => {
                 <Category/>
             </View>
             <View>
-                <HomeItems/>
+                <HomeItems navigation={navigation}/>
             </View>
             </ScrollView>
         </SafeAreaView>

@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import LoginScreen from './LoginScreen'
 import TabNav from './TabNav'
+import Item from './Item'
 
 const Stack = createNativeStackNavigator()
 
@@ -23,6 +24,11 @@ const StackNav = () => {
                 headerShown:false
             }}
             component={TabNav}
+           />
+            <Stack.Screen 
+            name="Item"
+
+            component={Item}
            />
 
        </Stack.Navigator>

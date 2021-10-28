@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Dimensions, Image, StyleSheet, Text, Pressable, View } from 'react-native'
 
 const HomeItems = ({navigation}) => {
     return (
@@ -9,24 +9,19 @@ const HomeItems = ({navigation}) => {
                     fontSize:20,
                     fontWeight:'700'
                     }}>Popular</Text>
-                <TouchableOpacity>
+                <Pressable>
                     <Text style={{color:'grey'}}>View All</Text>
-                </TouchableOpacity>
+                </Pressable>
             </View>
             <View style={styles.row}>
             <View style={styles.column1}>
                     <View style={styles.item}>
-                        <TouchableOpacity
+                        <Pressable
                             onPress={()=>navigation.navigate('Item',{
                                 name:'Nike Shoes',
                                 price:'$12.00',
                                 rating:5,
-                                description:`Lorem Ipsum is simply dummy text of the printing
-                                                 and typesetting industry.
-                                                Lorem Ipsum has been the industry's standard 
-                                                dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type
-                                                and scrambled it to make a type specimen book`,
+                                description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                                 image:require("../../assets/images/n1.png")
                                 
                             })}
@@ -45,21 +40,16 @@ const HomeItems = ({navigation}) => {
                                 $12.00
                             </Text>
                         </View>
-                        </TouchableOpacity>
+                        </Pressable>
                     </View>
 
                     <View style={styles.watchWrapper}>
-                        <TouchableOpacity
+                        <Pressable
                                     onPress={()=>navigation.navigate('Item',{
                                     name:'Wrist watch',
                                     price:'$120.00',
                                     rating:4,
-                                    description:`Lorem Ipsum is simply dummy text of the printing
-                                        and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard 
-                                        dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type
-                                        and scrambled it to make a type specimen book`,
+                                    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                                     image:require("../../assets/images/watch.png")
                                                             
                                 })}
@@ -79,22 +69,17 @@ const HomeItems = ({navigation}) => {
                                 $120.00
                             </Text>
                         </View>
-                        </TouchableOpacity>
+                        </Pressable>
                     </View>
                     
                
                     <View style={styles.bagcontainer1}>
-                    <TouchableOpacity
+                    <Pressable
                                                   onPress={()=>navigation.navigate('Item',{
                                                     name:'Gucci bag',
                                                     price:'$150.00',
                                                     rating:5,
-                                                    description:`Lorem Ipsum is simply dummy text of the printing
-                                                        and typesetting industry.
-                                                        Lorem Ipsum has been the industry's standard 
-                                                        dummy text ever since the 1500s,
-                                                        when an unknown printer took a galley of type
-                                                        and scrambled it to make a type specimen book`,
+                                                    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                                                     image:require("../../assets/images/red.png")
                                                                             
                                                 })}
@@ -117,22 +102,17 @@ const HomeItems = ({navigation}) => {
                             $150.00
                         </Text>
                     </View>
-                    </TouchableOpacity>
+                    </Pressable>
                 </View>
             </View> 
             <View style={styles.column2}>
                 <View style={styles.bagcontainer}>
-                    <TouchableOpacity
+                    <Pressable
                         onPress={()=>navigation.navigate('Item',{
                             name:'Backpack',
                             price:'$15.00',
                             rating:5,
-                            description:`Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.
-                                Lorem Ipsum has been the industry's standard 
-                                dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book`,
+                            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                             image:require("../../assets/images/bagpack.png")
                                                     
                         })}
@@ -155,24 +135,19 @@ const HomeItems = ({navigation}) => {
                             $15.00
                         </Text>
                     </View>
-                    </TouchableOpacity>
+                    </Pressable>
                 </View>
             
             <View style={styles.n2}>
 
                 <Text style={styles.new}>New</Text>
             <View >
-                <TouchableOpacity
+                <Pressable
                   onPress={()=>navigation.navigate('Item',{
                     name:'Puma Shoes',
                     price:'$15.00',
                     rating:5,
-                    description:`Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry.
-                        Lorem Ipsum has been the industry's standard 
-                        dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book`,
+                    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                     image:require("../../assets/images/n2.png")
                                             
                 })}
@@ -195,22 +170,17 @@ const HomeItems = ({navigation}) => {
                         $15.00
                     </Text>
             </View>
-            </TouchableOpacity>
+            </Pressable>
         </View>
                 </View>
 
                 <View style={styles.item6}>
-                    <TouchableOpacity
+                    <Pressable
                         onPress={()=>navigation.navigate('Item',{
                             name:'Smart',
                             price:'$50.00',
                             rating:4,
-                            description:`Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry.
-                                Lorem Ipsum has been the industry's standard 
-                                dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type
-                                and scrambled it to make a type specimen book`,
+                            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                             image:require("../../assets/images/swatch.png")}
                         )}
                     >
@@ -227,7 +197,7 @@ const HomeItems = ({navigation}) => {
                                 $50.00
                             </Text>
                         </View>
-                        </TouchableOpacity>
+                        </Pressable>
                     </View>
 
             </View>
