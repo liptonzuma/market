@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, Pressable, FlatList,ScrollView } from 'react-native'
 import AppBar from '../utils/AppBar';
 import Search from '../utils/Search'
-import data  from '../items.json'
+import data  from '../items'
 import Product from './Product';
 import { AntDesign } from '@expo/vector-icons';
 
@@ -13,7 +13,6 @@ const ProductList = () => {
             <View style={styles.Search}>
             <Search/>
             </View>
-            <ScrollView>
             <View style ={styles.label}>
                 <Text style={styles.big}>Available Products</Text>
                 <Pressable style={styles.button}>
@@ -21,6 +20,7 @@ const ProductList = () => {
                 </Pressable>
             </View>
                 <FlatList 
+                    
                     contentContainerStyle ={
                         {
                             flexDirection:'row',
@@ -33,7 +33,6 @@ const ProductList = () => {
                     data ={data}
                     renderItem ={(e)=><Product key={+e.item.ID} details={e.item}/> }
                 />
-            </ScrollView>
         </View>
     )
 }
