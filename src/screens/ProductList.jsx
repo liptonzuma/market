@@ -1,10 +1,10 @@
 import React from 'react'
-import { View, Text, StyleSheet, Pressable } from 'react-native'
+import { View, Text, StyleSheet, Pressable, FlatList,ScrollView } from 'react-native'
 import AppBar from '../utils/AppBar';
 import Search from '../utils/Search'
 import data  from '../items.json'
+import Product from './Product';
 import { AntDesign } from '@expo/vector-icons';
-import { ScrollView } from 'react-native';
 
 const ProductList = () => {
     return (
@@ -13,14 +13,26 @@ const ProductList = () => {
             <View style={styles.Search}>
             <Search/>
             </View>
+            <ScrollView>
             <View style ={styles.label}>
                 <Text style={styles.big}>Available Products</Text>
                 <Pressable style={styles.button}>
-                    <Text style={{color:'#383836'}}>sort by <AntDesign name="down" size={15} color="#383836" /></Text>
+                    <Text style={{color:'grey'}}>sort by <AntDesign name="down" size={15} color="grey" /></Text>
                 </Pressable>
             </View>
-            <ScrollView>
-                
+                <FlatList 
+                    contentContainerStyle ={
+                        {
+                            flexDirection:'row',
+                            flexWrap:'wrap',
+                            justifyContent:'space-between',
+                            margin:10
+                            
+                        }
+                    }
+                    data ={data}
+                    renderItem ={(e)=><Product key={+e.item.ID} details={e.item}/> }
+                />
             </ScrollView>
         </View>
     )
@@ -48,6 +60,9 @@ const styles = StyleSheet.create({
     button:{
         backgroundColor:'white',
         padding:7
+    },
+    list:{
+        flexDirection:'row'
     }
 
 })

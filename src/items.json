@@ -1,6 +1,6 @@
 [
-    {
-      "item1":{
+    
+      {
         "ID": "1897",
         "name":"Congo",
         "price":"$100",
@@ -10,10 +10,10 @@
         "description":"A nice ladies wear from USA"
 
     }
-  },
+  ,
     
+        
         {
-          "item2":{
             "ID":"2558",
             "name": "Apple Series",
             "price":"$125",
@@ -22,9 +22,9 @@
             "category":"Watch",
             "description":"A need watch from Apple which function as phone"
         }
-      },
-        {
-          "item3":{
+      ,
+        
+          {
             "ID":"3788",
             "name": "Yeezy Bag",
             "price":"$200",
@@ -33,9 +33,9 @@
             "category":"Bag",
             "description":"Yeezy is a newly yeezy bag that was produce in Ghana"
         }
-      },
-        {
-          "item4":{
+      ,
+        
+          {
             "ID":"4",
             "name": "Airmax 360",
             "price":"$50",
@@ -44,9 +44,9 @@
             "category":"Sneaker",
             "description":"Everyday footwear" 
         }
-      },
-            {
-              "item5":{ 
+      ,
+            
+              { 
                 "ID":"5",
                 "name": "Rolex 20",
                 "price":"$125",
@@ -54,11 +54,11 @@
                 "rating":3,
                 "category":"Watch",
                 "description":"Digital Watch that is easily to read time"
-        }
+        
       },
          
            {
-              "item6":{
+              
                 "ID":"6904",
                 "name": "Summer Bag",
                 "price":"$ 23",
@@ -66,11 +66,11 @@
                 "rating":5,
                 "category":"Ladies Bag",
                 "description":"This bag was made from USA"
-         }
+         
         },
          
          {
-           "item7":{
+           
             "ID":"7",
             "name": "Jordan 14",
             "price":"$45",
@@ -78,11 +78,11 @@
             "rating":6,
             "category":"Sneaker",
             "description":"A quality top sneaker since 1990"
-         }
+         
         },
           
          {
-           "item8":{
+          
             "ID":"8968",
             "name": "Contonoment ",
             "price":"$100",
@@ -90,11 +90,11 @@
             "rating":3,
             "category":"Watch",
             "description":"This is one of the top most watch in USA up to date"
-         }
+         
         },
           
          {
-           "item9":{
+           
             "ID":"976",
             "name": "Santana",
             "price":"$ 15",
@@ -102,11 +102,11 @@
             "rating":2,
             "category":"Ladies Bag",
             "description":"This is a red color bag with qualty leather"
-         }
+         
         },
 
          {
-           "item10":{
+          
              "ID": "1897",
              "name":"Canvas",
              "price":"$909",
@@ -114,11 +114,11 @@
              "rating":"3",
              "category":"Sneaker",
              "description":"This is a blue Canvas made from Dubai"
-         }
+         
         },
            
         {
-           "item11" :{
+          
             "ID"  : "1800",
             "name":"Switch Bar",
             "price":"$65",
@@ -127,11 +127,11 @@
             "category":"Watch",
             "description":"This is an analog watch"
 
-         }
+         
         },
 
          {
-            "item12":{
+           
             "ID"  : "2300",
             "name": "Gucci ",
             "price":"$120",
@@ -140,11 +140,11 @@
             "category":"Bag",
             "description":"This is a quality School bag from Gucci"
 
-         }
+         
         },
 
           {
-            "item13":{
+            
             "ID": "1007",
             "name":"Canvas",
             "price":"$900",
@@ -153,11 +153,10 @@
             "category":"Sneaker",
             "description":"This is a blue Canvas made from Dubai"
 
-          }
+          
         },
 
           {
-            "item14":{
             "ID": "1090",
             "name":"Apple Series",
             "price":"$100",
@@ -165,10 +164,10 @@
             "rating":"4",
             "category":"Watch",
             "description":"This is an apple series made from Dubai"
-          }
+          
         },
 
-          {"item15":{
+         {
             "ID": "1847",
             "name":"All stars",
             "price":"$90",
@@ -176,7 +175,7 @@
             "rating":"5",
             "category":"Sneaker",
             "description":"All stars is for both male and female"
-          }
+          
         }
 ]
 
