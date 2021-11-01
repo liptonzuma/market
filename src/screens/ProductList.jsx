@@ -7,7 +7,7 @@ import Product from './Product';
 import { AntDesign } from '@expo/vector-icons';
 
 
-const ProductList = () => {
+const ProductList = ({cartItems,setCartItems}) => {
     return (
         <View style={styles.container}>
             <AppBar screen="Shop"/>
@@ -32,7 +32,7 @@ const ProductList = () => {
                         }
                     }
                     data ={data}
-                    renderItem ={(e)=><Product key={+e.item.ID} details={e.item}/> }
+                    renderItem ={(e)=><Product key={+e.item.ID} details={e.item} setCartItems={setCartItems} cartItems = {cartItems}/> }
                 />
         </View>
     )

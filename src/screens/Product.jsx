@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Dimensions, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Dimensions, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
-import { Image } from 'react-native-elements';
+import { Image,Rating } from 'react-native-elements';
 import { ActivityIndicator } from 'react-native';
+import {FontAwesome} from "@expo/vector-icons"
 
-const Product = ({details}) => {
+const Product = ({details,cartItems,setCartItems}) => {
     const [selected,setSelected]=useState(false)
     return (
         <View style={styles.container}>
@@ -23,6 +24,26 @@ const Product = ({details}) => {
                     resizeMode="contain"
                     style={styles.image}
                 />
+            </View>
+            <View style={styles.nameContainer}>
+                <View>
+                <Text style={styles.name}>{details.name}</Text>
+                <Text style={styles.price}>{details.price}</Text>
+                <View style={styles.rating}>
+                <Rating 
+                    ratingCount ={details.rating}
+                            count ={5}
+                            imageSize={12}
+                        />
+                </View>
+                </View>
+                <TouchableOpacity style={styles.button}
+                    onPress={()=>setCartItems(cartItems+1)}
+                >
+                    <Text style={{textAlign:'center'}}>
+                        <FontAwesome  name="plus" size={15} color="white"/>
+                    </Text>
+                </TouchableOpacity>
             </View>
         </View>
     )
@@ -47,7 +68,29 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     image:{
-        width:100,
-        height:100
+        width:120,
+        height:120
+    },
+    nameContainer:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center'
+    },
+    rating:{
+        justifyContent:'flex-start',
+        alignItems:'flex-start'
+    },
+    name:{
+        fontSize:20,
+        color:'#525151'
+    },
+    price:{
+        fontSize:20,
+        fontWeight:'700'
+    },
+    button:{
+        backgroundColor:'red',
+        padding:10,
+        borderRadius:45
     }
 })

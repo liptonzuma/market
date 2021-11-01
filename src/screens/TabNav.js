@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeScreen from './HomeScreen'
 import { AntDesign } from '@expo/vector-icons';
@@ -13,8 +13,8 @@ import { Icon, withBadge } from 'react-native-elements'
 const Tab = createBottomTabNavigator()
 
 const TabNav = () => {
-    const items_in_cart =3
-    const BadgedIcon = withBadge(items_in_cart)(Icon)
+    const [cartItems,setCartItems] = useState(0)
+    const BadgedIcon = withBadge(cartItems)(Icon)
 
     return (
        <Tab.Navigator
@@ -52,6 +52,8 @@ const TabNav = () => {
                 headerShown:false,
                 tabBarIcon:({focused})=><Feather name="shopping-bag" size={24} color={focused?"#f5565e":'black'} />
             }}
+            cartItems={cartItems}
+            setCartItems={setCartItems}
            />
            <Tab.Screen
             name="Favorite"

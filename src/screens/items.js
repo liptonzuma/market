@@ -17,7 +17,7 @@
             ID:"2558",
             name: "Apple Series",
             price:"$125",
-            image:require("../../assets/images/series 1.png"),
+            image:require("../../assets/images/series1.png"),
             rating:3,
             category:"Watch",
             description:"A need watch from Apple which function as phone"
@@ -39,7 +39,7 @@
             ID:"4",
             name: "Airmax 360",
             price:"$50",
-            image:require("../../assets/images/Airmax 360.png"),
+            image:require("../../assets/images/Airmax360.png"),
             rating:3,
             category:"Sneaker",
             description:"Everyday footwear" 
@@ -61,7 +61,7 @@
               
                 ID:"6904",
                 name: "Summer Bag",
-                price:"$ 23",
+                price:"$23",
                 image:require("../../assets/images/WhiteBag.png"),
                 rating:5,
                 category:"Ladies Bag",
@@ -74,7 +74,7 @@
             ID:"7",
             name: "Jordan 14",
             price:"$45",
-            image:require("../../assets/images/Jordan 14.png"),
+            image:require("../../assets/images/Jordan14.png"),
             rating:6,
             category:"Sneaker",
             description:"A quality top sneaker since 1990"
@@ -97,7 +97,7 @@
            
             ID:"976",
             name: "Santana",
-            price:"$ 15",
+            price:"$15",
             image:require("../../assets/images/RedHandBag.png"),
             rating:2,
             category:"Ladies Bag",
@@ -110,7 +110,7 @@
              ID: "1897",
              name:"Canvas",
              price:"$909",
-             image:require("../../assets/images/Blue Canvas.png"),
+             image:require("../../assets/images/BlueCanvas.png"),
              rating:"3",
              category:"Sneaker",
              description:"This is a blue Canvas made from Dubai"
@@ -148,7 +148,7 @@
             ID: "1007",
             name:"Canvas",
             price:"$900",
-            image:require("../../assets/images/Blue Canvas.png"),
+            image:require("../../assets/images/BlueCanvas.png"),
             rating:"5",
             category:"Sneaker",
             description:"This is a blue Canvas made from Dubai"
@@ -160,7 +160,7 @@
             ID: "1090",
             name:"Apple Series",
             price:"$100",
-            image:require("../../assets/images/Series 2.png"),
+            image:require("../../assets/images/Series2.png"),
             rating:"4",
             category:"Watch",
             description:"This is an apple series made from Dubai"
@@ -171,7 +171,7 @@
             ID: "1847",
             name:"All stars",
             price:"$90",
-            image:require("../../assets/images/All stars.png"),
+            image:require("../../assets/images/Allstars.png"),
             rating:"5",
             category:"Sneaker",
             description:"All stars is for both male and female"

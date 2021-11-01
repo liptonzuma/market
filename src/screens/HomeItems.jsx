@@ -304,7 +304,7 @@ const styles = StyleSheet.create({
         fontSize:17,
         textAlign:'left',
         fontWeight:'500',
-        paddingLeft:10
+        paddingLeft:10,
      },
      bag:{
         width:150,
