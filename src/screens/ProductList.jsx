@@ -2,9 +2,10 @@ import React from 'react'
 import { View, Text, StyleSheet, Pressable, FlatList,ScrollView } from 'react-native'
 import AppBar from '../utils/AppBar';
 import Search from '../utils/Search'
-import data  from '../items'
+import data  from './items'
 import Product from './Product';
 import { AntDesign } from '@expo/vector-icons';
+
 
 const ProductList = () => {
     return (

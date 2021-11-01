@@ -12,14 +12,14 @@ const Product = ({details}) => {
                 <Pressable 
                     onPress={()=>setSelected(!selected)}
                 >
-                    <Text>{!selected?<AntDesign name="hearto" size={24} color="grey" />:<AntDesign name="heart" size={24} color="red" />}</Text>
+                    <Text><AntDesign name={!selected?"hearto":"heart"} size={24} color="red" /> </Text>
                 </Pressable>
             </View>
             <View style={styles.imageContainer}>
                 <Image
                     placeholderStyle={{backgroundColor:'transparent'}}
                     PlaceholderContent={<ActivityIndicator/>}
-                    source={{uri:details.image,width:150,height:150}}
+                    source={details.image}
                     resizeMode="contain"
                     style={styles.image}
                 />
@@ -43,9 +43,11 @@ const styles = StyleSheet.create({
         justifyContent:'flex-end',
         alignItems:'flex-end'
     },
-    imageContainer:{},
+    imageContainer:{
+        alignItems:'center'
+    },
     image:{
-        width:150,
-        height:150
+        width:100,
+        height:100
     }
 })
