@@ -52,8 +52,6 @@ const TabNav = () => {
                 headerShown:false,
                 tabBarIcon:({focused})=><Feather name="shopping-bag" size={24} color={focused?"#f5565e":'black'} />
             }}
-            cartItems={cartItems}
-            setCartItems={setCartItems}
            />
            <Tab.Screen
             name="Favorite"

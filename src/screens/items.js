@@ -7,7 +7,7 @@
         image:require("../../assets/images/BlueCongo.png"),
         rating:5,
         category:"ladies wear",
-        description:"A nice ladies wear from USA"
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
 
     }
   ,
@@ -20,7 +20,7 @@
             image:require("../../assets/images/series1.png"),
             rating:3,
             category:"Watch",
-            description:"A need watch from Apple which function as phone"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         }
       ,
         
@@ -31,7 +31,7 @@
             image:require("../../assets/images/YellowBag.png"),
             rating:5,
             category:"Bag",
-            description:"Yeezy is a newly yeezy bag that was produce in Ghana"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         }
       ,
         
@@ -42,7 +42,7 @@
             image:require("../../assets/images/Airmax360.png"),
             rating:3,
             category:"Sneaker",
-            description:"Everyday footwear" 
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         }
       ,
             
@@ -53,7 +53,7 @@
                 image:require("../../assets/images/DigitalWatch.png"),
                 rating:3,
                 category:"Watch",
-                description:"Digital Watch that is easily to read time"
+                description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         
       },
          
@@ -65,7 +65,7 @@
                 image:require("../../assets/images/WhiteBag.png"),
                 rating:5,
                 category:"Ladies Bag",
-                description:"This bag was made from USA"
+                description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
          
         },
          
@@ -77,7 +77,7 @@
             image:require("../../assets/images/Jordan14.png"),
             rating:6,
             category:"Sneaker",
-            description:"A quality top sneaker since 1990"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
          
         },
           
@@ -89,7 +89,7 @@
             image:require("../../assets/images/OpenWatch.png"),
             rating:3,
             category:"Watch",
-            description:"This is one of the top most watch in USA up to date"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
          
         },
           
@@ -101,7 +101,7 @@
             image:require("../../assets/images/RedHandBag.png"),
             rating:2,
             category:"Ladies Bag",
-            description:"This is a red color bag with qualty leather"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
          
         },
 
@@ -113,7 +113,7 @@
              image:require("../../assets/images/BlueCanvas.png"),
              rating:"3",
              category:"Sneaker",
-             description:"This is a blue Canvas made from Dubai"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
          
         },
            
@@ -125,7 +125,7 @@
             image:require("../../assets/images/AnalogWatch.png"),
             rating:"4",
             category:"Watch",
-            description:"This is an analog watch"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
 
          
         },
@@ -138,7 +138,7 @@
             image:require("../../assets/images/SchoolBag.png"),
             rating:"5",
             category:"Bag",
-            description:"This is a quality School bag from Gucci"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
 
          
         },
@@ -151,7 +151,7 @@
             image:require("../../assets/images/BlueCanvas.png"),
             rating:"5",
             category:"Sneaker",
-            description:"This is a blue Canvas made from Dubai"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
 
           
         },
@@ -163,7 +163,7 @@
             image:require("../../assets/images/Series2.png"),
             rating:"4",
             category:"Watch",
-            description:"This is an apple series made from Dubai"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
           
         },
 
@@ -174,7 +174,7 @@
             image:require("../../assets/images/Allstars.png"),
             rating:"5",
             category:"Sneaker",
-            description:"All stars is for both male and female"
+            description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
           
         }
 ]

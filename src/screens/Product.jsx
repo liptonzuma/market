@@ -5,7 +5,7 @@ import { Image,Rating } from 'react-native-elements';
 import { ActivityIndicator } from 'react-native';
 import {FontAwesome} from "@expo/vector-icons"
 
-const Product = ({details,cartItems,setCartItems}) => {
+const Product = ({details,navigation}) => {
     const [selected,setSelected]=useState(false)
     return (
         <View style={styles.container}>
@@ -17,6 +17,16 @@ const Product = ({details,cartItems,setCartItems}) => {
                 </Pressable>
             </View>
             <View style={styles.imageContainer}>
+                <Pressable
+                        onPress={()=>navigation.navigate('Item',{
+                        name:details.name,
+                        price:details.price,
+                        rating:details.rating,
+                        description:details.description,
+                        image:details.image
+                                                    
+                    })}
+                >
                 <Image
                     placeholderStyle={{backgroundColor:'transparent'}}
                     PlaceholderContent={<ActivityIndicator/>}
@@ -24,6 +34,7 @@ const Product = ({details,cartItems,setCartItems}) => {
                     resizeMode="contain"
                     style={styles.image}
                 />
+                </Pressable>
             </View>
             <View style={styles.nameContainer}>
                 <View>
