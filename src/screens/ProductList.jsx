@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Pressable, FlatList,ScrollView } from 'react-native'
+import { View, Text, StyleSheet, Pressable, FlatList,ScrollView, Dimensions } from 'react-native'
 import AppBar from '../utils/AppBar';
 import Search from '../utils/Search'
 import data  from './items'
@@ -21,7 +21,6 @@ const ProductList = ({navigation}) => {
                 </Pressable>
             </View>
                 <FlatList 
-                    
                     contentContainerStyle ={
                         {
                             flexDirection:'row',
@@ -32,7 +31,7 @@ const ProductList = ({navigation}) => {
                         }
                     }
                     data ={data}
-                    renderItem ={(e)=><Product key={+e.item.ID} navigation={navigation} details={e.item} setCartItems={setCartItems} cartItems = {cartItems}/> }
+                    renderItem ={(e)=><Product key={+e.item.ID} navigation={navigation} details={e.item} /> }
                 />
         </View>
     )

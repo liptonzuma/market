@@ -7,15 +7,13 @@ import { Feather } from '@expo/vector-icons';
 import Favorite from './Favorite';
 import ProductList from './ProductList';
 import CartItem from './CartItem';
-import { Ionicons } from '@expo/vector-icons';
 import { Icon, withBadge } from 'react-native-elements'
-
+import { connect } from 'react-redux';
 const Tab = createBottomTabNavigator()
 
-const TabNav = () => {
-    const [cartItems,setCartItems] = useState(0)
-    const BadgedIcon = withBadge(cartItems)(Icon)
-
+const TabNav = (props) => {
+    const BadgedIcon = withBadge(props.cart.length)(Icon)
+    console.log(props.cart)
     return (
        <Tab.Navigator
         screenOptions={{
@@ -77,5 +75,7 @@ const TabNav = () => {
     )
 }
 
-export default TabNav;
+const mapStateToProps=state=> state;
+const mapDispatchToProps=()=>({});
+export default connect(mapStateToProps,mapDispatchToProps)(TabNav);
 

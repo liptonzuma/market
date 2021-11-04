@@ -1,17 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Dimensions, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign,FontAwesome } from '@expo/vector-icons';
 import { Image,Rating } from 'react-native-elements';
 import { ActivityIndicator } from 'react-native';
-import {FontAwesome} from "@expo/vector-icons"
+import { connect } from 'react-redux';
+import { ADD_TO_CART,ADD_TO_FAVORITE } from '../Redux/actions';
 
-const Product = ({details,navigation}) => {
+const Product = ({navigation,details,addToCart,addToFavorite,cart}) => {
     const [selected,setSelected]=useState(false)
+
+    useEffect(()=>{
+
+    },[cart])
     return (
         <View style={styles.container}>
             <View style={styles.icon}>
                 <Pressable 
-                    onPress={()=>setSelected(!selected)}
+                    onPress={()=>{
+                            addToFavorite(details)
+                            setSelected(!selected)
+                            return;
+                    }}
                 >
                     <Text><AntDesign name={!selected?"hearto":"heart"} size={24} color="red" /> </Text>
                 </Pressable>
@@ -49,7 +58,10 @@ const Product = ({details,navigation}) => {
                 </View>
                 </View>
                 <TouchableOpacity style={styles.button}
-                    onPress={()=>setCartItems(cartItems+1)}
+                    onPress={()=>{
+                        addToCart(details)
+                        console.log(cart.length)
+                    }}
                 >
                     <Text style={{textAlign:'center'}}>
                         <FontAwesome  name="plus" size={15} color="white"/>
@@ -59,8 +71,17 @@ const Product = ({details,navigation}) => {
         </View>
     )
 }
+const mapStateToProps=state=> state
+const mapDispatchToProps =(dispatch)=>{
+    return{
+    addToCart: item=> dispatch({type:ADD_TO_CART,payload:{item}}),
+    addToFavorite:item=>dispatch({type:ADD_TO_FAVORITE,payload:{item}})
+    }
+}
 
-export default Product
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(Product)
 
 const styles = StyleSheet.create({
     container:{
