@@ -20,7 +20,7 @@ const reducer =(state=initialState,action)=>{
         case REMOVE_FROM_CART:
             return{
                 ...state,
-                cart:state.cart.filter(e=> e !== payload)
+                cart:action.payload
             }
         case ADD_TO_FAVORITE:
             return {

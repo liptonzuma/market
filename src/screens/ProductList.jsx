@@ -20,7 +20,7 @@ const ProductList = ({navigation}) => {
                     <Text style={{color:'grey'}}>sort by <AntDesign name="down" size={15} color="grey" /></Text>
                 </Pressable>
             </View>
-                <FlatList 
+            <FlatList 
                     contentContainerStyle ={
                         {
                             flexDirection:'row',

@@ -13,7 +13,6 @@ const Tab = createBottomTabNavigator()
 
 const TabNav = (props) => {
     const BadgedIcon = withBadge(props.cart.length)(Icon)
-    console.log(props.cart)
     return (
        <Tab.Navigator
         screenOptions={{

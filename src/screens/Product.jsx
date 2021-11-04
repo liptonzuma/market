@@ -74,8 +74,8 @@ const Product = ({navigation,details,addToCart,addToFavorite,cart}) => {
 const mapStateToProps=state=> state
 const mapDispatchToProps =(dispatch)=>{
     return{
-    addToCart: item=> dispatch({type:ADD_TO_CART,payload:{item}}),
-    addToFavorite:item=>dispatch({type:ADD_TO_FAVORITE,payload:{item}})
+    addToCart: item=> dispatch({type:ADD_TO_CART,payload:item}),
+    addToFavorite:item=>dispatch({type:ADD_TO_FAVORITE,payload:item})
     }
 }
 

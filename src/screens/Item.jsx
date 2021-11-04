@@ -1,15 +1,19 @@
 import React from 'react'
-import { Dimensions, Image, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { FAB, Rating } from 'react-native-elements'
+import { Dimensions,  Pressable, ScrollView, StyleSheet,ActivityIndicator, Text, TouchableOpacity, View, Alert } from 'react-native'
+import { FAB, Rating,Image } from 'react-native-elements'
 import { Entypo } from '@expo/vector-icons';
+import { ADD_TO_CART } from '../Redux/actions';
+import { connect } from 'react-redux';
 
 
-const Item = ({route,navigation}) => {
+const Item = ({route,navigation,addToCart,cart}) => {
     const data = route.params
     return (
         <View style={styles.conatiner}>
             <View style={styles.wrapper}>
                 <Image 
+                  placeholderStyle={{backgroundColor:'transparent'}}
+                  PlaceholderContent={<ActivityIndicator/>}
                     source={data.image}
                     resizeMode="contain"
                     style={styles.image}
@@ -37,7 +41,12 @@ const Item = ({route,navigation}) => {
                  
                 </ScrollView>
                 <View>
-                       <TouchableOpacity style={styles.fab}>
+                       <TouchableOpacity style={styles.fab}
+                            onPress={()=>{
+                                addToCart(data)
+                                Alert.alert('Success','Item add to cart successfully')
+                            }}
+                       >
                            <Text>
                            <Entypo name="shopping-cart" size={24} color="white" />
                            </Text>
@@ -48,7 +57,14 @@ const Item = ({route,navigation}) => {
     )
 }
 
-export default Item
+const mapStateToProps=state=> state
+const mapDispatchToProps =(dispatch)=>{
+    return{
+    addToCart: item=> dispatch({type:ADD_TO_CART,payload:{item}}),
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Item)
 
 const styles = StyleSheet.create({
     conatiner:{
