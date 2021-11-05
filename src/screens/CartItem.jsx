@@ -11,7 +11,7 @@ const CartItem = ({cart,updateCart}) => {
     useEffect(()=>{},[cart])
 
     const deleteItem=e=>{
-        const filter =cart.filter(a=> a !== e.item );
+        const filter =cart.filter(a=> cart.indexOf(a) !== e.index );
         updateCart(filter)
     }
     return (
@@ -31,7 +31,7 @@ const CartItem = ({cart,updateCart}) => {
                         backgroundColor:'white',
                         borderRadius:10
                         
-                        }} key={i}>
+                        }} key={e.item.ID}>
                         <View style={styles.itemContainer}>
                                 <Image
                                         placeholderStyle={{backgroundColor:'transparent'}}

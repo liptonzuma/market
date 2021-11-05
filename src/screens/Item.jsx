@@ -8,6 +8,8 @@ import { connect } from 'react-redux';
 
 const Item = ({route,navigation,addToCart,cart}) => {
     const data = route.params
+    console.log(data)
+    console.log(cart);
     return (
         <View style={styles.conatiner}>
             <View style={styles.wrapper}>
@@ -44,7 +46,7 @@ const Item = ({route,navigation,addToCart,cart}) => {
                        <TouchableOpacity style={styles.fab}
                             onPress={()=>{
                                 addToCart(data)
-                                Alert.alert('Success','Item add to cart successfully')
+                                Alert.alert('Success','Item added to cart successfully')
                             }}
                        >
                            <Text>

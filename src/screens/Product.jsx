@@ -16,13 +16,13 @@ const Product = ({navigation,details,addToCart,addToFavorite,cart}) => {
         <View style={styles.container}>
             <View style={styles.icon}>
                 <Pressable 
-                    onPress={()=>{
-                            addToFavorite(details)
+                    onPress={()=>{    
+                        !selected && addToFavorite(details)
                             setSelected(!selected)
                             return;
                     }}
                 >
-                    <Text><AntDesign name={!selected?"hearto":"heart"} size={24} color="red" /> </Text>
+                    <Text><AntDesign name={!selected?"hearto":"heart"} size={24} color={selected?"red":"#505152"} /> </Text>
                 </Pressable>
             </View>
             <View style={styles.imageContainer}>
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
         fontWeight:'700'
     },
     button:{
-        backgroundColor:'red',
+        backgroundColor:'#f5565e',
         padding:10,
         borderRadius:45
     }

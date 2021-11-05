@@ -30,7 +30,7 @@ const reducer =(state=initialState,action)=>{
         case REMOVE_FROM_FAVORITE:
             return{
                 ...state,
-                favorite:state.favorite.filter(e=> e !== action.payload)
+                favorite:action.payload
             }
         default:
             return state;
