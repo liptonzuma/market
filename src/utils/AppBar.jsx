@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, SafeAreaView,View,Dimensions, TouchableOpacity, Pressable } from 'react-native'
 import { Avatar } from 'react-native-elements/dist/avatar/Avatar'
-import { FontAwesome } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 const AppBar = ({screen,navigation}) => {
     return (
@@ -9,7 +9,7 @@ const AppBar = ({screen,navigation}) => {
             <View style={styles.avatar}>
                 <TouchableOpacity>
                     <Text>
-                    <FontAwesome name="th-large" size={24} color="#f5565e" />
+                    <Entypo name="shop" size={29} color="#f5565e" />
                     </Text>
                 </TouchableOpacity>
                 <Text>{screen}</Text>
