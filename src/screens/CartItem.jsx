@@ -7,7 +7,7 @@ import {FontAwesome} from '@expo/vector-icons'
 import { REMOVE_FROM_CART } from '../Redux/actions'
 
 const {width,height} = Dimensions.get('screen')
-const CartItem = ({cart,updateCart}) => {
+const CartItem = ({cart,updateCart,navigation}) => {
     useEffect(()=>{},[cart])
 
     const deleteItem=e=>{
@@ -16,7 +16,7 @@ const CartItem = ({cart,updateCart}) => {
     }
     return (
         <View style={styles.container}>
-            <AppBar screen="Cart" />
+            <AppBar screen="Cart" navigation={navigation} />
             <View style={{marginTop:70,marginBottom:50}}>
                 <FlatList 
             

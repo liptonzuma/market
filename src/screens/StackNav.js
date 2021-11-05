@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import LoginScreen from './LoginScreen'
 import TabNav from './TabNav'
 import Item from './Item'
+import Profile from './Profile'
 
 const Stack = createNativeStackNavigator()
 
@@ -29,6 +30,10 @@ const StackNav = () => {
             name="Item"
             component={Item}
            />
+            <Stack.Screen 
+           name="Profile"
+           component={Profile}
+          />
 
        </Stack.Navigator>
     )

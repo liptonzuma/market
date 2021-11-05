@@ -1,9 +1,9 @@
 import React from 'react'
-import { StyleSheet, Text, SafeAreaView,View,Dimensions, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, SafeAreaView,View,Dimensions, TouchableOpacity, Pressable } from 'react-native'
 import { Avatar } from 'react-native-elements/dist/avatar/Avatar'
 import { FontAwesome } from '@expo/vector-icons';
 
-const AppBar = ({screen}) => {
+const AppBar = ({screen,navigation}) => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.avatar}>
@@ -13,10 +13,14 @@ const AppBar = ({screen}) => {
                     </Text>
                 </TouchableOpacity>
                 <Text>{screen}</Text>
+                <Pressable 
+                    onPress={()=>navigation.navigate('Profile')}
+                >
                 <Avatar 
                         rounded
                         source={require('../../assets/images/avatar.jpg')}
                     />
+                </Pressable>
 
             </View>
         </SafeAreaView>

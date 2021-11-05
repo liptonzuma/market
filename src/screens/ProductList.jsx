@@ -10,7 +10,7 @@ import { AntDesign } from '@expo/vector-icons';
 const ProductList = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <AppBar screen="Shop"/>
+            <AppBar screen="Shop" navigation={navigation} />
             <View style={styles.Search}>
             <Search/>
             </View>

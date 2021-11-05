@@ -7,7 +7,7 @@ import {FontAwesome} from '@expo/vector-icons'
 import {  REMOVE_FROM_FAVORITE } from '../Redux/actions'
 
 const {width,height} = Dimensions.get('screen')
-const Favorite = ({favorite,updateFavorite}) => {
+const Favorite = ({favorite,updateFavorite,navigation}) => {
     useEffect(()=>{},[favorite])
 
     const deleteItem=e=>{
@@ -16,7 +16,7 @@ const Favorite = ({favorite,updateFavorite}) => {
     }
     return (
         <View style={styles.container}>
-            <AppBar screen="Favorite" />
+            <AppBar screen="Favorite" navigation={navigation}/>
             <View></View>
             <View style={{marginTop:70,marginBottom:50}}>
                 <FlatList 
