@@ -5,6 +5,7 @@ import LoginScreen from './LoginScreen'
 import TabNav from './TabNav'
 import Item from './Item'
 import Profile from './Profile'
+import RegisterScreen from './RegisterScreen'
 
 const Stack = createNativeStackNavigator()
 
@@ -15,6 +16,13 @@ const StackNav = () => {
            <Stack.Screen 
             name="Login"
             component={LoginScreen}
+            options={{
+                headerShown:false
+            }}
+           />
+             <Stack.Screen 
+            name="Register"
+            component={RegisterScreen}
             options={{
                 headerShown:false
             }}

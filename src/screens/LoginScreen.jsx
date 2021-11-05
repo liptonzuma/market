@@ -81,7 +81,9 @@ export default function LoginScreen({navigation}) {
                     <View>
                        <Text style={styles.text1}> Don't have an account? </Text>
                     </View>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={()=>navigation.navigate('Register')}
+                    >
                        <Text style={styles.text2}> SignUp </Text>
                     </TouchableOpacity>
                 </View>
