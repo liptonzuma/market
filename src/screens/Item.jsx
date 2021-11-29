@@ -62,7 +62,7 @@ const Item = ({route,navigation,addToCart,cart}) => {
 const mapStateToProps=state=> state
 const mapDispatchToProps =(dispatch)=>{
     return{
-    addToCart: item=> dispatch({type:ADD_TO_CART,payload:{item}}),
+    addToCart: item=> dispatch({type:ADD_TO_CART,payload:item}),
     }
 }
 
